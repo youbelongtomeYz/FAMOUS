@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smooth Scroll Embed</title>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: white;
+}
+
+section {
+  height: 100vh;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.one { background: #111; }
+.two { background: #1a1a1a; }
+.three { background: #222; }
+
+h1 {
+  font-size: 48px;
+}
+</style>
+</head>
+
+<body>
+
+<section class="one">
+  <h1>Section 1</h1>
+  <a href="#two">Scroll Down ↓</a>
+</section>
+
+<section id="two" class="two">
+  <h1>Section 2</h1>
+  <a href="#three">Scroll Down ↓</a>
+</section>
+
+<section id="three" class="three">
+  <h1>Section 3</h1>
+  <a href="#top">Back to top ↑</a>
+</section>
+
+</body>
+</html>
